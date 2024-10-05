@@ -2,7 +2,10 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv(r'C:\Users\mkaur\Downloads\data\github_dataset.csv')
+data = pd.read_csv(r'data\github_dataset.csv')
+
+#data = pd.read_csv('data/github_dataset.csv')
+
 
 data = data.rename(columns={
     'stars_count': 'Stars Count',
